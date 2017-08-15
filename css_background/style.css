@@ -6,8 +6,20 @@
 */
 
 html{
+	/*So to be able have a cover as a background! */
+	/*same thing could be done with videos*/
 	height: 100%;
 }
+
+/*video{
+	 position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vh;
+    height: 100vh;
+    z-index: -100;
+}*/
+
 body {
 	margin: 0;
 	padding-top: 30px;

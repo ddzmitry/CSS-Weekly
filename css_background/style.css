@@ -1,0 +1,41 @@
+/*  CSS Document  */
+
+/*  This file was provided as part of a weekly web design tutorial series.
+	Sign-up for our newsletter, at http://codifydesign.com, to be notified
+	about each new episode of CSS Shorts
+*/
+
+html{
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding-top: 30px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background-image: url(media/louvre.jpg);
+background-position: 50% bottom;
+/*The best is cover*/
+background-size: cover ;
+}
+
+#container {
+	width: 90%; 
+	margin: 0 auto; padding-top: 50%;
+	border: 1px solid #ccc;
+	/*Gradient*/
+	/*Yo caun specify licatiojs*/
+	/*background: repeating-linear-gradient(to bottom right,#68c87a,#0d8bcd);*/
+background-repeat: no-repeat;
+	display: none;
+
+
+}
+
+#container p {
+	margin: 0; padding: 20px;
+	color: #fff;
+	background-color: rgba(0,0,0,.6)
+}
+
+

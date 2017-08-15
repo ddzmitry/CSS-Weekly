@@ -36,13 +36,18 @@ h2 {
 }
 
 article {
+	/*will make picture to move to the article border*/
+	position: relative;
 	margin: 20px auto 0 auto;
 	border-radius: 8px;
-	padding: 15px 25px 25px 25px;
+	padding: 15px 260px 25px 25px;
 	background-color: rgba(255,255,255,.65);
 }
 
 aside {
+	top:65px;
+	right: 25px;
+	position: absolute;
 	width: 150px;
 	padding: 15px 10px 20px 45px;
 	background-color: #233e72;
@@ -50,11 +55,20 @@ aside {
 	border-radius: 10px;
 }
 
+/*absolute removes natural flow
+will go to see parent that has a position
+
+*/
 aside img {
+position: absolute; 
+top:-10px;
+left:-12px;
 
 }
 
 aside h3 {
+	/*relative will put text over the image*/
+	position: relative;
 	font-size: 1.5em;
 	font-weight: 700;
 	line-height: 1.2em;
@@ -81,6 +95,9 @@ aside a {
 	text-transform: uppercase;
 	font-weight: 700;
 	border-radius: 7px;
+	position: absolute;
+	bottom: -4px;
+	right: -4px;
 }
 
 aside a::after {
@@ -93,7 +110,17 @@ aside a::after {
 
 @media screen and (max-width: 540px) {
 
-	
+article {
+	padding-right: 25px;
+}
+aside{
+position: relative;
+top:auto;
+right: auto;
+}
+aside a {
+	position: static;
+}
 
 }
 
